@@ -29,4 +29,4 @@ if you're using php, just add those 3 lines to your page code, and your webhook 
 
 You will then need to do something with all the other data coming into this webhook endpoint, but that's a whole new discussion.
 
-In the file included here, I've added a way to have the JSON frm the incoming webhooks written to a file on the webserver so it's possible to see the incoming JSON Data structure.
+In the file included here, I've added a way to have the JSON from the incoming webhook written to a file on the webserver so it's possible to see the incoming JSON Data structure.
