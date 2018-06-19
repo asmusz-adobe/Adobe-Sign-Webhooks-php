@@ -15,8 +15,11 @@ This is not as difficult as it sounds as long as you have a way to capture that 
 In php (one I'm familiar with) you just need something like the following on your page:
  
 ```php
+// get incoming header value from '$_SERVER[]'
 $asId = $_SERVER['HTTP_X_ADOBESIGN_CLIENTID'];
+// pass header for JSON content type
 header('Content-Type: application/json');
+// add header to this page response with Adobe ID
 header('X-AdobeSign-ClientId:'. $asId );
 ```
  
