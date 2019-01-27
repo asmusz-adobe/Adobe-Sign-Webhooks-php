@@ -19,6 +19,9 @@ $webhook = file_get_contents('php://input');
 $print_webhook = prettyPrint( $webhook );
 
 // get JSON from webhook to object for use in logging
+// All Webhooks contain Adobe Sign REST V6 "agreement ids" and these are different from V5
+// You can query against V6 using a V5 ID but V6 ids are NOT backwards compatible and calls against V6
+//      endpoints will return agreements ids that can only be used for V6
 $data = json_decode(file_get_contents('php://input'), true);
 // write to log
 $fp = fopen('webhook_log.txt', 'a');
