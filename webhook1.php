@@ -2,6 +2,8 @@
 // include functions (file has "prettyPrint" function to format incoming JSON)
 include './functions.php';
 // All Webhooks contain Adobe Sign REST V6 "agreement ids" and these ARE DIFFERENT than V5 ids
+// To lear about V6 enhancements see page on Adobe.io here: 
+// https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/api_usage/enhancements_v6.md
 
 // Set to display errors
 ini_set('display_errors', 1);
