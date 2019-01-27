@@ -1,6 +1,7 @@
 <?php 
 // include functions (file has "prettyPrint" function to format incoming JSON)
 include './functions.php';
+// All Webhooks contain Adobe Sign REST V6 "agreement ids" and these ARE DIFFERENT than V5 ids
 
 // Set to display errors
 ini_set('display_errors', 1);
